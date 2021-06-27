@@ -1,0 +1,283 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background: #010326;
+  font-family: 'Crimson Text', serif;
+}
+
+/*Header*/
+
+header {
+  width: 100%;
+  height: 70px;
+  background: rgb(197, 199, 132);
+}
+
+#menu {
+  width: 80%;
+  height: 60px;
+  margin: auto;
+}
+
+.menu__logo {
+  width: 30%;
+  height: 60px;
+  float: left;
+  padding-top: 5px;
+}
+
+/*Tal vez el tamaño del logo es muy grande. Tener en cuenta para el Responsive.*/
+
+.menu__img {
+  width: 210px;
+  height: 60px; 
+}
+
+.menu__nav {
+  width: 70%;
+  height: 60px;
+  float: left;
+  text-align: right;
+  padding-top: 7px;
+  box-sizing: border-box;
+}
+
+.menu__nav-li {
+  display: inline;
+  padding: 25px;
+}
+
+.menu__nav-link--active {
+  color: rgb(133, 132, 199);
+  font-size: 19px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  font-family: 'Crimson Text', serif;
+  text-shadow: 1px 1px 9px rgb(133, 132, 199);
+}
+
+.menu__nav-link {
+  color: black;
+  font-size: 19px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  font-family: 'Crimson Text', serif;
+  text-shadow: 1px 1px 9px rgb(133, 132, 199);
+}
+
+.menu__nav-link:hover {
+  color: rgb(133, 132, 199);
+}
+
+/* Main-slider */
+
+body{
+  background-color: rgb(244, 248, 235);
+  font-family: sans-serif;
+}
+
+.gallerySlider{
+  margin: 30px auto;
+  background-color: rgb(227, 197, 190);
+  width: 800px;
+  padding: 30px;
+  border-radius: 1em;
+  box-shadow: 2px 2px 1em #999;
+}
+
+.gallerySlider__list {
+  padding: 0;
+  margin: 0;
+  padding-top: 25px;
+  list-style: none;
+}
+
+/*Fin edición <li>*/
+
+.gallerySlider__list{
+  position: relative;
+  width: 800px;
+  height: 400px;
+}
+
+.gallerySlider__list-option {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  transition: opacity .5s;
+  background:#fff;
+}
+
+.gallerySlider__list-option-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.gallerySlider__list-option:first-child {
+  opacity: 1; /*Mostramos el primer <li>*/
+}
+
+.gallerySlider__list-option:target {
+  opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.controlSlider__list {
+  text-align: center;
+  margin-left: -43px;
+}
+
+.controlSlider__list-option {
+  display: inline-block;
+  text-align: center;
+}
+
+.controlSlider__list-option-link {
+  display: inline-block;
+  margin: auto;
+  margin: 0 15px 0;
+  color: white;
+  text-decoration: none;
+  background-color: rgb(64, 57, 56);
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+
+.controlSlider__list-option-link:hover {
+  border-radius: 50%;
+  background: rgb(133, 132, 199);
+  color: white;
+  box-shadow: 2px 2px 4px#999;
+}
+
+
+/*Table*/
+
+.mainTable__data,
+.mainTable__header {
+  border: 1px solid lightgrey;
+  padding: 10px;
+}
+
+.mainTable__data {
+  text-align: center;
+}
+
+.mainTable {
+  text-align: center;
+  border-collapse: collapse;
+  border: 2px solid lightgrey;
+  margin: auto;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-size: .8rem;
+}
+
+.mainTable__caption {
+  justify-content: center;
+  margin: 20px 0 40px 0;
+  caption-side: bottom;
+}
+
+#separator {
+  width: 30%;
+  border: solid 1px black;
+}
+
+/*Button*/
+
+.button {
+  padding: 40px 0 40px 0;
+  text-align: center;
+}
+
+.button__button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  color: black;
+  background: #BDBF75;
+  box-shadow: inset 0 0 0 0 rgb(133, 132, 199);
+  transition: ease 0.3s;
+  outline: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.button__button:hover {
+  box-shadow: inset 350px 0 0 0 rgb(133, 132, 199);
+  color: #fff;
+}
+
+/*CV*/
+
+.curriculumVitae {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 65px;
+  right: 20px;
+}
+
+.curriculumVitae__img {
+  font-size: 40px;
+  border-radius: 50%;
+  color: black;
+  position: relative;
+  top:17%;
+  left: 27%;
+}
+
+.curriculumVitae:hover {
+  border-radius: 50%;
+  background: rgb(133, 132, 199);
+  box-shadow: 2px 2px 4px#999;
+}
+
+/*Footer*/
+
+footer {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  background-color: #BDBF75;
+}
+
+.socialMedia {
+  width: 20%;
+  height: 45px;
+  margin: auto;
+}
+
+.socialMedia__cont {
+display: inline-block;
+
+}
+
+.socialMedia__ico {
+  color: black;
+  text-decoration: none;
+  background-color: #BDBF75;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  margin-top: 6px;
+}
+
+.socialMedia__ico:hover {
+  border-radius: 50%;
+  background: rgb(133, 132, 199);
+  color: white;
+  box-shadow: 2px 2px 4px#999;
+}

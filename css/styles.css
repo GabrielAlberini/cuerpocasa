@@ -1,0 +1,218 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Crimson Text', serif;
+  background-image: url(../img/fotoCuerpo16bg.png);
+  background-size: cover;
+}
+
+/*Header*/
+
+header {
+  width: 100%;
+  height: 70px;
+  background: rgb(197, 199, 132);
+}
+
+#menu {
+  width: 80%;
+  height: 60px;
+  margin: auto;
+}
+
+.menu__logo {
+  width: 30%;
+  height: 60px;
+  float: left;
+  padding-top: 5px;
+}
+
+/*Tal vez el tamaño del logo es muy grande. Tener en cuenta para el Responsive.*/
+
+.menu__img {
+  width: 210px;
+  height: 60px; 
+}
+
+.menu__nav {
+  width: 70%;
+  height: 60px;
+  float: left;
+  text-align: right;
+  padding-top: 7px;
+  box-sizing: border-box;
+}
+
+.menu__nav-li {
+  display: inline;
+  padding: 25px;
+}
+
+.menu__nav-link--active {
+  color: rgb(133, 132, 199);
+  font-size: 19px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  font-family: 'Crimson Text', serif;
+  text-shadow: 1px 1px 9px rgb(133, 132, 199);
+}
+
+.menu__nav-link {
+  color: black;
+  font-size: 19px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  font-family: 'Crimson Text', serif;
+  text-shadow: 1px 1px 9px rgb(133, 132, 199);
+}
+
+.menu__nav-link:hover {
+  color: rgb(133, 132, 199);
+}
+
+  /*Main*/
+
+.container {
+  display: flex;
+  width: 80%;
+  margin:auto;
+}
+
+.main{
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+}
+
+.main__cont {
+  width: 80%;
+  margin: auto; 
+  padding: 50px 0 50px 0;
+}
+
+/*Cuando se selecciona el txt lo realiza en color.*/
+
+.main__title::selection,
+.main__subtitle::selection,
+.main__txtMain::selection,
+.button__button::selection {
+  background: rgb(133, 132, 199);
+  color: black;
+}
+
+/*Fin edición selección.*/
+
+.main__title {
+  font-size: 60px;
+  margin-bottom: 0;
+}
+
+.main__subtitle {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+#separator {
+  width: 30%;
+  border: solid 1px black;
+}
+
+/*Botón*/
+/*transition se aplica al button al comienzo tambien, corregir*/
+
+.button {
+  padding: 40px 0 40px 0;
+}
+
+.button__button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  color: black;
+  background: #BDBF75;
+  box-shadow: inset 0 0 0 0 rgb(133, 132, 199);
+  transition: ease 0.3s;
+  outline: none;
+  border-radius: 4px;
+  font-size: 0.7em;
+  cursor: pointer;
+}
+
+.button__button:hover {
+  box-shadow: inset 350px 0 0 0 rgb(133, 132, 199);
+  color: #fff;
+}
+
+/*Iframe*/
+
+.main__iframe {
+  padding: 50px;
+  border:none;
+}
+
+/*CV*/
+
+.curriculumVitae {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 65px;
+  right: 20px;
+}
+
+.curriculumVitae__img {
+  font-size: 40px;
+  border-radius: 50%;
+  color: black;
+  position: relative;
+  top:17%;
+  left: 27%;
+}
+
+.curriculumVitae:hover {
+  border-radius: 50%;
+  background: rgb(133, 132, 199);
+  box-shadow: 2px 2px 4px#999;
+}
+
+/*Footer*/
+
+footer {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  background-color: #BDBF75;
+}
+
+.socialMedia {
+  width: 20%;
+  height: 45px;
+  margin: auto;
+}
+
+.socialMedia__cont {
+display: inline-block;
+
+}
+
+.socialMedia__ico {
+  color: black;
+  text-decoration: none;
+  background-color: #BDBF75;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  margin-top: 6px;
+}
+
+.socialMedia__ico:hover {
+  border-radius: 50%;
+  background: rgb(133, 132, 199);
+  color: white;
+  box-shadow: 2px 2px 4px#999;
+}
