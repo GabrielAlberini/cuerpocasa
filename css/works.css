@@ -1,3 +1,13 @@
+:root {
+  --colorPrimario: #94b0da;
+  --colorSecundario: #8f91a2;
+  --colorTerciario: #dcedff;
+  --colorCuarto: #505a5b;
+  --colorQuinto: #343f3e;
+  --varHeader:#343f3eef;
+  --varWorks:#94b0dad5;
+}
+
 body {
   box-sizing: border-box;
   padding: 0;
@@ -8,77 +18,82 @@ body {
   
 /*Header*/
 
+/*Header*/
+
 header {
-  width: 100%;
-  height: 70px;
-  background: rgb(197, 199, 132);
+  width: 90%;
+  height: 10.7%;
+  background: var(--varHeader);
+  border-radius: 12px;
+  position: fixed;
+  z-index: 100;
+  top: 3%;
+  left: 5%;
 }
 
 #menu {
   width: 80%;
-  height: 60px;
   margin: auto;
 }
 
 .menu__logo {
   width: 30%;
-  height: 60px;
   float: left;
-  padding-top: 5px;
+  padding-top: .5%;
 }
 
 /*Tal vez el tamaño del logo es muy grande. Tener en cuenta para el Responsive.*/
 
 .menu__img {
-  width: 210px;
-  height: 60px; 
+  width: 50%;
+  height: 67%;
+  padding-top: 3.4%; 
 }
 
 .menu__nav {
   width: 70%;
-  height: 60px;
   float: left;
   text-align: right;
-  padding-top: 7px;
+  padding-top: .9%;
   box-sizing: border-box;
 }
 
 .menu__nav-li {
   display: inline;
-  padding: 25px;
+  padding: 1em;
 }
 
 .menu__nav-link--active {
-  color: rgb(133, 132, 199);
-  font-size: 19px;
+  color: var(--colorPrimario);
+  font-size: 1em;
   text-decoration: none;
   letter-spacing: 1px;
-  text-transform: lowercase;
-  font-family: 'Crimson Text', serif;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
   text-shadow: 1px 1px 9px rgb(133, 132, 199);
 }
 
 .menu__nav-link {
-  color: black;
-  font-size: 19px;
+  color: var(--colorTerciario);
+  font-size: 1em;
   text-decoration: none;
   letter-spacing: 1px;
   text-transform: lowercase;
-  font-family: 'Crimson Text', serif;
+  font-family: 'Roboto Slab', serif;
   text-shadow: 1px 1px 9px rgb(133, 132, 199);
 }
 
 .menu__nav-link:hover {
-  color: rgb(133, 132, 199);
+  color: var(--colorPrimario);
 }
 
 /*Main*/
 
 .container {
   width: 80%;
-  margin: auto;
   display: block;
-  padding: 20px;
+  margin: auto;
+  padding: 8% 0;
 }
 
 
@@ -105,8 +120,8 @@ header {
 /*Comienzo selección*/
 
 .works__cont-txt-txt::selection {
-  background: rgb(133, 132, 199);
-  color: white;
+  background: var(--colorPrimario);
+  color: black;
 }
 
 /*Fin selección*/
@@ -118,7 +133,7 @@ header {
   align-items: center;
   border-radius: 6px;
   font-size: 15px;
-  box-shadow: 0px 15px 25px rgba(0, 0, 0, .50);
+  box-shadow: 3px 10px 20px rgba(0, 0, 0, .50);
   transition: all 500ms ease-out;
 }
 
@@ -136,7 +151,7 @@ header {
   width: 100%;
   height: 100%;
   border-radius: 6px;
-  background: #8a57bbdc;
+  background: var(--varWorks);
   transition: all 500ms ease-out;
   opacity: 0;
   visibility: hidden;
@@ -149,16 +164,17 @@ header {
 }
 
 .cont__info-title {
-  color: #fff;
-  font-size: 1.5em;
-  font-weight: 400;
+  color: var(--colorQuinto);
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 1.7em;
   margin-bottom: 120px;
   transition: all 500ms ease-out;
   margin-top: 30px;
 }
 
 .cont__info-txt {
-  color: #fff;
+  color: var(--colorCuarto);
   font-size: 1.2em;
   max-width: 12em;
   margin: auto;
@@ -180,16 +196,18 @@ header {
   width: 150px;
   height: 50px;
   border: none;
-  color: black;
-  background: rgb(133, 132, 199);
+  color: var(--colorTerciario);
+  background: var(--colorCuarto);
+  transition: ease 0.3s;
   outline: none;
-  border-radius: 6px;
-  font-size: 1em;
+  border-radius: 4px;
+  font-family: 'Roboto Slab', serif;
+  font-size: .8em;
   cursor: pointer;
 }
 
 .button__button:hover {
-  background: rgb(66, 66, 99);
+  box-shadow: inset 350px 0 0 0 var(--colorQuinto);
   color: #fff;
 }
 
@@ -214,8 +232,8 @@ header {
 
 .curriculumVitae:hover {
   border-radius: 50%;
-  background: rgb(133, 132, 199);
-  box-shadow: 2px 2px 4px#999;
+  background: var(--colorPrimario);
+  box-shadow: 2px 2px 4px rgba(153, 153, 153, 0.712);
 }
 
 /*Footer*/
@@ -224,7 +242,7 @@ footer {
   text-align: center;
   width: 100%;
   height: 50px;
-  background-color: #BDBF75;
+  background-color: var(--colorQuinto);
 }
 
 .socialMedia {
@@ -239,9 +257,9 @@ display: inline-block;
 }
 
 .socialMedia__ico {
-  color: black;
+  color: var(--colorTerciario);
   text-decoration: none;
-  background-color: #BDBF75;
+  background-color: var(--colorQuinto);
   padding: 10px;
   width: 20px;
   height: 20px;
@@ -251,52 +269,6 @@ display: inline-block;
 
 .socialMedia__ico:hover {
   border-radius: 50%;
-  background: rgb(133, 132, 199);
-  color: white;
-  box-shadow: 2px 2px 4px#999;
+  background: var(--colorSecundario);
+  color: var(--colorQuinto);
 }
-
-  
-
-
-
-
-
-  /*
-  
-.container {
-  width: 80%;
-  margin: auto;
-  display: block;
-  padding: 20px;
-}
-
-.works {
-  display: flex;
-  justify-content: center;
-}
-
-.works__cont-txt, 
-.works__cont-img {
-  display: flex;
-  width: 400px;
-  height: 400px;
-  margin: 20px;
-}
-
-
-
-.works__cont-img-img {
-  width: inherit;
-  height: inherit;
-  display: flex;
-  align-items: center;
-  font-size: 15px;
-}
-
-.works__cont-txt-txt {
-  display: flex;
-  align-items: center;
-  font-size: 15px;
-}
-  */
