@@ -161,13 +161,11 @@ header {
   color: #fff;
 }
 
-/*Iframe*/
-
-.main__iframe {
-  padding: 50px;
-  border:none;
+video {
+  width: 500px;
+  height: 500px;
 }
-
+ 
 /*CV*/
 
 .curriculumVitae {

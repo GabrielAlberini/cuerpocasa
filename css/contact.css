@@ -14,9 +14,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Roboto Slab', serif;
-  background-image: url(../img/fotoCuerpo16bg.png);
+  background-image: url(../img/fotoCuerpo23bg.png);
   background-size: cover;
-  background-position: center;
 }
   
 /*Header*/
@@ -87,29 +86,26 @@ header {
   color: var(--colorPrimario);
 }
 
-/*Container Contact*/
-
 .container {
-  width: 80%;
-  margin: auto;
-  display: flex;
-}
-
-.formMaps, .formContacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
   width: 100%;
-  display: inline-block;
   margin: auto;
-}
-
-.formMaps {
-  padding: 15% 3% 8% 0;
 }
 
 .formContacts {
-  padding: 12% 3% 8% 0;
+  width: 23em;
+  padding: 30% 0 15% 18%;
 }
 
-/*Contact Form*/
+.formMaps {
+  padding-right: 90px;
+}
+
+.maps {
+  padding-top: 70px;
+}
 
 .formContacts__form{
   margin: auto;

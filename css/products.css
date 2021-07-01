@@ -1,75 +1,105 @@
+:root {
+  --colorPrimario: #94b0da;
+  --colorSecundario: #8f91a2;
+  --colorTerciario: #dcedff;
+  --colorCuarto: #505a5b;
+  --colorQuinto: #343f3e;
+  --varHeader:#343f3eef;
+}
+
 body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   background: #010326;
   font-family: 'Crimson Text', serif;
+  background-image: url(../img/fotoPedidoXS12bg.png);
+  background-size: cover;
+  background-position: center;
 }
 
 /*Header*/
 
 header {
-  width: 100%;
-  height: 70px;
-  background: rgb(197, 199, 132);
+  width: 90%;
+  height: 10.7%;
+  background: var(--varHeader);
+  border-radius: 12px;
+  position: fixed;
+  top: 3%;
+  left: 5%;
+  z-index: 100;
 }
 
 #menu {
   width: 80%;
-  height: 60px;
   margin: auto;
 }
 
 .menu__logo {
   width: 30%;
-  height: 60px;
   float: left;
-  padding-top: 5px;
+  padding-top: .5%;
 }
 
 /*Tal vez el tamaño del logo es muy grande. Tener en cuenta para el Responsive.*/
 
 .menu__img {
-  width: 210px;
-  height: 60px; 
+  width: 50%;
+  height: 67%;
+  padding-top: 3.4%; 
 }
 
 .menu__nav {
   width: 70%;
-  height: 60px;
   float: left;
   text-align: right;
-  padding-top: 7px;
+  padding-top: .9%;
   box-sizing: border-box;
 }
 
 .menu__nav-li {
   display: inline;
-  padding: 25px;
+  padding: 1em;
 }
 
 .menu__nav-link--active {
-  color: rgb(133, 132, 199);
-  font-size: 19px;
+  color: var(--colorPrimario);
+  font-size: 1em;
   text-decoration: none;
   letter-spacing: 1px;
-  text-transform: lowercase;
-  font-family: 'Crimson Text', serif;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
   text-shadow: 1px 1px 9px rgb(133, 132, 199);
 }
 
 .menu__nav-link {
-  color: black;
-  font-size: 19px;
+  color: var(--colorTerciario);
+  font-size: 1em;
   text-decoration: none;
   letter-spacing: 1px;
   text-transform: lowercase;
-  font-family: 'Crimson Text', serif;
+  font-family: 'Roboto Slab', serif;
   text-shadow: 1px 1px 9px rgb(133, 132, 199);
 }
 
 .menu__nav-link:hover {
-  color: rgb(133, 132, 199);
+  color: var(--colorPrimario);
+}
+
+/*Textos main*/
+
+.cont__txt {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 6.5em;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+
+.cont__txt h2 {
+  font-size: 2.5em;
 }
 
 /* Main-slider */
@@ -79,86 +109,46 @@ body{
   font-family: sans-serif;
 }
 
-.gallerySlider{
-  margin: 30px auto;
-  background-color: rgb(227, 197, 190);
-  width: 800px;
-  padding: 30px;
-  border-radius: 1em;
-  box-shadow: 2px 2px 1em #999;
-}
-
-.gallerySlider__list {
-  padding: 0;
-  margin: 0;
-  padding-top: 25px;
-  list-style: none;
-}
-
-/*Fin edición <li>*/
-
-.gallerySlider__list{
-  position: relative;
-  width: 800px;
-  height: 400px;
-}
-
-.gallerySlider__list-option {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  opacity: 0;
-  width: inherit;
-  height: inherit;
-  transition: opacity .5s;
-  background:#fff;
-}
-
-.gallerySlider__list-option-img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-
-.gallerySlider__list-option:first-child {
-  opacity: 1; /*Mostramos el primer <li>*/
-}
-
-.gallerySlider__list-option:target {
-  opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
-}
-
-.controlSlider__list {
-  text-align: center;
-  margin-left: -43px;
-}
-
-.controlSlider__list-option {
-  display: inline-block;
-  text-align: center;
-}
-
-.controlSlider__list-option-link {
-  display: inline-block;
+.slider {
+  width: 60%;
   margin: auto;
-  margin: 0 15px 0;
-  color: white;
-  text-decoration: none;
-  background-color: rgb(64, 57, 56);
-  padding: 10px;
-  width: 20px;
-  height: 20px;
-  font-size: 20px;
-  border-radius: 100%;
+  overflow: hidden;
+  margin-bottom: 4em;
+  padding-top: 5.5em;
 }
 
-.controlSlider__list-option-link:hover {
-  border-radius: 50%;
-  background: rgb(133, 132, 199);
-  color: white;
-  box-shadow: 2px 2px 4px#999;
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  height: 400px;
+  animation: cambio 10s infinite alternate linear;
 }
 
+.slider li {
+  list-style: none;
+  width: 100%;
+}
+
+img {
+  position: relative;
+  width: 100%;
+
+}
+
+@keyframes cambio {
+  0% {margin-left: 0;}
+  20% {margin-left: -0%;}
+
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+}
 
 /*Table*/
 
@@ -195,6 +185,25 @@ body{
 
 /*Button*/
 
+.button--active{
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  padding-bottom: 3em
+}
+
+.button1{
+  position: absolute;
+  left: 30em;
+}
+
+.button2{
+  position: absolute;
+  left: 45em;
+}
+
+
 .button {
   padding: 40px 0 40px 0;
   text-align: center;
@@ -205,17 +214,18 @@ body{
   height: 50px;
   border: none;
   color: black;
-  background: #BDBF75;
-  box-shadow: inset 0 0 0 0 rgb(133, 132, 199);
+  background: var(--colorPrimario);
   transition: ease 0.3s;
   outline: none;
   border-radius: 4px;
   font-size: 1em;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
   cursor: pointer;
 }
 
 .button__button:hover {
-  box-shadow: inset 350px 0 0 0 rgb(133, 132, 199);
+  box-shadow: inset 350px 0 0 0 var(--colorCuarto);
   color: #fff;
 }
 
@@ -240,8 +250,7 @@ body{
 
 .curriculumVitae:hover {
   border-radius: 50%;
-  background: rgb(133, 132, 199);
-  box-shadow: 2px 2px 4px#999;
+  background: var(--colorPrimario);
 }
 
 /*Footer*/
@@ -250,7 +259,7 @@ footer {
   text-align: center;
   width: 100%;
   height: 50px;
-  background-color: #BDBF75;
+  background-color: var(--colorQuinto);
 }
 
 .socialMedia {
@@ -265,9 +274,9 @@ display: inline-block;
 }
 
 .socialMedia__ico {
-  color: black;
+  color: var(--colorTerciario);
   text-decoration: none;
-  background-color: #BDBF75;
+  background-color: var(--colorQuinto);
   padding: 10px;
   width: 20px;
   height: 20px;
@@ -277,7 +286,6 @@ display: inline-block;
 
 .socialMedia__ico:hover {
   border-radius: 50%;
-  background: rgb(133, 132, 199);
-  color: white;
-  box-shadow: 2px 2px 4px#999;
+  background: var(--colorSecundario);
+  color: var(--colorQuinto);
 }

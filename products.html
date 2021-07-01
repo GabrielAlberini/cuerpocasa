@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/products.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,7 @@
     <header>
         <div id="menu">
             <div class="menu__logo">
-                <a class="menu__link" href="index.html"><img class="menu__img" src="img/logo.png" alt="logo de cuerpo casa"></a>
+                <a class="menu__link" href="index.html"><img class="menu__img" src="img/logo1.png" alt="logo de cuerpo casa"></a>
             </div>
             <nav class="menu__nav">
                 <ul class="menu__list">
@@ -33,62 +33,26 @@
     </header>
 <!--Contenido-->
     <main>
-        <section class="section">
-            <div class="gallerySlider">
-                <ul class="gallerySlider__list">
-                    <li class="gallerySlider__list-option" id="slide1">
-                        <img class="gallerySlider__list-option-img" src="nilopapelart/fotoLibreta5.png"/>
-                    </li>
-                    <li class="gallerySlider__list-option" id="slide2">
-                        <img class="gallerySlider__list-option-img" src="nilopapelart/fotoLibreta4.png"/>
-                    </li>
-                    <li class="gallerySlider__list-option" id="slide3">
-                        <img class="gallerySlider__list-option-img" src="nilopapelart/fotoLibreta1.png"/>
-                    </li>
-                    <li class="gallerySlider__list-option" id="slide4">
-                        <img class="gallerySlider__list-option-img" src="nilopapelart/fotoLibreta6.png"/>
-                    </li>                                      
-                </ul>                    
-                <ul class="controlSlider__list">
-                    <li class="controlSlider__list-option">
-                        <a class="controlSlider__list-option-link" href="#slide1"><i class="controlSlider__list-option-link-ico fas fa-paper-plane"></i></a>
-                    </li>
-                    <li class="controlSlider__list-option">
-                        <a class="controlSlider__list-option-link" href="#slide2"><i class="controlSlider__list-option-link-ico fas fa-paper-plane"></i></a>
-                    </li>
-                    <li class="controlSlider__list-option">
-                        <a class="controlSlider__list-option-link" href="#slide3"><i class="controlSlider__list-option-link-ico fas fa-paper-plane"></i></a>
-                    </li>
-                    <li class="controlSlider__list-option">
-                        <a class="controlSlider__list-option-link" href="#slide4"><i class="controlSlider__list-option-link-ico fas fa-paper-plane"></i></a>
-                    </li>
-                </ul> 
-              </div>
-        </section>
-        <section class="tablePrice">
-            <table class="mainTable">
-                <caption class="mainTable__caption">Lista de precios.</caption>
-                <tr class="mainTable_row">
-                    <th class="mainTable__header" scope="col">Tipo de producto</th>
-                    <th class="mainTable__header" scope="col">Dolares</th>
-                    <th class="mainTable__header" scope="col">Pesos Argentinos</th>
-                </tr>
-                <tr class="mainTable_row">
-                    <th class="mainTable__header" scope="row">Agenda</th>
-                    <td class="mainTable__data">US$9</td>
-                    <td class="mainTable__data">$870</td>
-                </tr>
-                <tr class="mainTable_row">
-                    <th class="mainTable__header" scope="row">Cuaderno</th>
-                    <td class="mainTable__data">US$10,5</td>
-                    <td class="mainTable__data">$987</td>
-                </tr>
-                <tr class="mainTable_row">
-                    <th class="mainTable__header" scope="row">Cuadro</th>
-                    <td class="mainTable__data">US$15</td>
-                    <td class="mainTable__data">$1410</td>
-                </tr>   
-            </table>
+        <div class="cont__txt">
+            <h2>Conoce nuestros productos</h2>
+            <p>Todos los diseños son personalizados y unicos. Comunicate con nosotros para obtener uno. ¡Link al pie de página!</p>
+        </div>
+        <div class="button--active">
+            <div class="button button1">
+                <a class="button__link" href="works.html"><button class="button__button">Elegir diseño</button></a> 
+            </div>
+            <div class="button button2">
+                <a class="button__link" href="aboutme.html"><button class="button__button">Conocer al artista</button></a> 
+            </div>
+        </div>
+        <div class="slider">
+            <ul>
+                <li><img src="nilopapelart/fotoLibreta5-5.png" alt=""></li>
+                <li><img src="nilopapelart/fotoLibreta4-4.png" alt=""></li>
+                <li><img src="nilopapelart/fotoLibreta1-1.png" alt=""></li>
+                <li><img src="nilopapelart/fotoLibreta6-6.png" alt=""></li>
+            </ul>
+        </div>
                 <hr id="separator">
                 <div class="button">
                     <a class="button__link" href="contacts.html"><button class="button__button">¡Quiero uno!</button></a> 
