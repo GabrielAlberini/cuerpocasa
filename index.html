@@ -15,11 +15,12 @@
     <body>
 <!--Encabezado-->
         <header>
-            <div id="menu">
-                <div class="menu__logo">
-                    <a class="menu__link" href="#"><img class="menu__img" src="img/logo1.png" alt="logo de cuerpo casa"></a>
-                </div>
-                <nav class="menu__nav">
+            
+
+                <nav>
+                    <div class="cont__logo">
+                        <a class="logo__link" href="#"><img class="logo__img" src="img/logo1.png" alt="logo de cuerpo casa"></a>
+                    </div>
                     <ul class="menu__list">
                         <li class="menu__nav-li"><a class="menu__nav-link--active" href="#">HOME</a></li>
                         <li class="menu__nav-li"><a class="menu__nav-link" href="aboutme.html">ABOUT ME</a></li>
@@ -27,6 +28,7 @@
                         <li class="menu__nav-li"><a class="menu__nav-link" href="products.html">PRODUCTS</a></li>
                         <li class="menu__nav-li"><a class="menu__nav-link" href="contacts.html">CONTACT</a></li>
                     </ul>
+                    <div class="hide"><i class="fa fa-bars hide__icon" aria-hidden="true"></i><span class="hide__span">Menu</span></div>
                 </nav>
             </div>
         </header>
@@ -66,6 +68,14 @@
             <a class="socialMedia__link" href="https://wa.me/543498528087"><i class="socialMedia__ico fab fa-whatsapp"></i></a>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+                    <script>
+                      $(".hide").on('click', function() {
+                        $("nav ul").toggle('slow');
+                      })
+    </script>
+
     </body>
     </html>
     
