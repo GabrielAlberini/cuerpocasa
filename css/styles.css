@@ -235,7 +235,7 @@ footer {
 
 /*Inicio Media Querys. Implementado en dos versiones. Para pantallas de hasta de 800px y de hasta 370px.*/
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 451px) and (max-width:800px) {
   
   /*Header*/
 
@@ -273,7 +273,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 200px) and (max-width:450px) {
 
   /*Header*/
   
