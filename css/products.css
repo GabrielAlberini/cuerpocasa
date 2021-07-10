@@ -22,45 +22,33 @@ body {
 
 header {
   width: 90%;
-  height: 10.7%;
   background: var(--varHeader);
   border-radius: 12px;
   position: fixed;
   top: 3%;
   left: 5%;
-  z-index: 100;
+  z-index: 1000;
 }
 
-#menu {
-  width: 80%;
-  margin: auto;
-}
-
-.menu__logo {
-  width: 30%;
+.logo__img {
+  width: 15%;
   float: left;
-  padding-top: .5%;
+  padding-top: 10px;
+  padding-left:140px
 }
 
-/*Tal vez el tamaño del logo es muy grande. Tener en cuenta para el Responsive.*/
-
-.menu__img {
-  width: 50%;
-  height: 67%;
-  padding-top: 3.4%; 
-}
-
-.menu__nav {
-  width: 70%;
-  float: left;
-  text-align: right;
-  padding-top: .9%;
-  box-sizing: border-box;
+.menu__list {
+  width: 60%;
+  float: right;
+  text-align: center;
+  list-style: none;
+  overflow: hidden;
 }
 
 .menu__nav-li {
-  display: inline;
-  padding: 1em;
+  display: inline-block;
+  padding: 10px;
+  transition: all ease-in-out 250ms;
 }
 
 .menu__nav-link--active {
@@ -84,6 +72,28 @@ header {
 }
 
 .menu__nav-link:hover {
+  color: var(--colorPrimario);
+}
+
+.hide__icon {
+  padding: 5px;
+  color: var(--colorPrimario);
+}
+
+.hide {
+  padding: 16px;
+  margin-right: 20px;
+  font-size: 18px;
+  float: right;
+  color: white;
+  cursor: pointer;
+  display: none;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  text-shadow: 1px 1px 9px rgb(133, 132, 199);
+}
+
+.hide:hover {
   color: var(--colorPrimario);
 }
 
@@ -114,7 +124,6 @@ body{
   margin: auto;
   overflow: hidden;
   margin-bottom: 4em;
-  padding-top: 5.5em;
 }
 
 .slider ul {
@@ -150,34 +159,6 @@ img {
   100% {margin-left: -300%;}
 }
 
-/*Table*/
-
-.mainTable__data,
-.mainTable__header {
-  border: 1px solid lightgrey;
-  padding: 10px;
-}
-
-.mainTable__data {
-  text-align: center;
-}
-
-.mainTable {
-  text-align: center;
-  border-collapse: collapse;
-  border: 2px solid lightgrey;
-  margin: auto;
-  letter-spacing: 1px;
-  font-family: sans-serif;
-  font-size: .8rem;
-}
-
-.mainTable__caption {
-  justify-content: center;
-  margin: 20px 0 40px 0;
-  caption-side: bottom;
-}
-
 #separator {
   width: 30%;
   border: solid 1px black;
@@ -190,17 +171,8 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  padding-bottom: 3em
-}
-
-.button1{
-  position: absolute;
-  left: 30em;
-}
-
-.button2{
-  position: absolute;
-  left: 45em;
+  padding-bottom: 3em;
+  margin: auto;
 }
 
 
