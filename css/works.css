@@ -333,7 +333,7 @@ display: inline-block;
   /*Header*/
   
   header {
-    width: 90%;
+    width: 80%;
     background: var(--varHeader);
     border-radius: 12px;
     position: fixed;
@@ -387,18 +387,14 @@ display: inline-block;
   .works__cont-img {
   display: flex;
   justify-content: center;
-  width: 250px;
-  height: 250px;
-  }
-
-  .works__cont-txt {
-    width: 100%;
+  width: 300px;
+  height: 300px;
   }
 
   .works__cont-txt-txt {
     width: 80%;
     text-align: center;
-    font-size: .8em;  
+    font-size: .87em;  
   }
 
   /*Animacion en imagenes*/
