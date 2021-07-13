@@ -99,10 +99,6 @@ header {
   color: var(--colorPrimario);
 }
 
-.hide__span {
-  font-family: 'Roboto Slab', serif;
-}
-
 /*Main*/
 
 .container {
@@ -327,6 +323,8 @@ display: inline-block;
     justify-items: center;
   }
 
+
+
   
 }
 
@@ -367,7 +365,9 @@ display: inline-block;
   }
 
   /*Main*/
+  /*Footer*/
 
+<<<<<<< HEAD
   .container {
     width: 100%;
     margin-top: 5em;
@@ -409,28 +409,31 @@ display: inline-block;
 
   .cont__info-title {
     font-size: 1.2em;
-  }
-
-  .cont__info-txt {
-    font-size: 1.2em;
-    margin: auto;
-  }
-
-  .works__cont-img:hover > 
-  .cont__info .cont__info-title {
-    margin-top: 20px;
-  }
-
-  /*Botón*/
-
-  .button__button {
-    width: 150px;
+=======
+  footer {
+    text-align: center;
+    width: 100%;
     height: 50px;
+    background-color: var(--colorQuinto);
+>>>>>>> parent of 35e85ac (Responsive aboutme y works)
   }
   
- /*Footer*/
-
-  .socialMedia { 
+  .socialMedia {
     width: 24%;
+    height: 45px;
+    margin: auto;
+  }
+  
+  .socialMedia__ico {
+    padding: 10px;
+    width: 18px;
+    height: 18px;
+    margin-top: 8px;
+  }
+  
+  .socialMedia__ico:hover {
+    border-radius: 50%;
+    background: var(--colorSecundario);
+    color: var(--colorQuinto);
   }
 }

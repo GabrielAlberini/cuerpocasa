@@ -118,11 +118,10 @@ header {
 
 .main__txt {
   display: flex;
-  margin: auto;
   align-items: center;
   text-align: justify;
   font-size: 1.2em;
-  padding: 10px;
+  padding: 0 2.7em;
 }
 
 /*Comienzo selección*/
@@ -273,6 +272,7 @@ footer {
     font-size: 1em;
     width: 90%;
     height: auto;
+    padding-right: 40px;
   }
 
   .main__img {
