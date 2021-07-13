@@ -99,6 +99,10 @@ header {
   color: var(--colorPrimario);
 }
 
+.hide__span {
+  font-family: 'Roboto Slab', serif;
+}
+
 /*Main*/
 
 .container {
@@ -323,8 +327,6 @@ display: inline-block;
     justify-items: center;
   }
 
-
-
   
 }
 
@@ -333,7 +335,7 @@ display: inline-block;
   /*Header*/
   
   header {
-    width: 80%;
+    width: 90%;
     background: var(--varHeader);
     border-radius: 12px;
     position: fixed;
@@ -365,9 +367,7 @@ display: inline-block;
   }
 
   /*Main*/
-  /*Footer*/
 
-<<<<<<< HEAD
   .container {
     width: 100%;
     margin-top: 5em;
@@ -387,14 +387,18 @@ display: inline-block;
   .works__cont-img {
   display: flex;
   justify-content: center;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
+  }
+
+  .works__cont-txt {
+    width: 100%;
   }
 
   .works__cont-txt-txt {
     width: 80%;
     text-align: center;
-    font-size: .87em;  
+    font-size: .8em;  
   }
 
   /*Animacion en imagenes*/
@@ -405,31 +409,29 @@ display: inline-block;
 
   .cont__info-title {
     font-size: 1.2em;
-=======
-  footer {
-    text-align: center;
-    width: 100%;
-    height: 50px;
-    background-color: var(--colorQuinto);
->>>>>>> parent of 35e85ac (Responsive aboutme y works)
   }
-  
-  .socialMedia {
-    width: 24%;
-    height: 45px;
+
+  .cont__info-txt {
+    font-size: 1.2em;
     margin: auto;
   }
-  
-  .socialMedia__ico {
-    padding: 10px;
-    width: 18px;
-    height: 18px;
-    margin-top: 8px;
+
+  .works__cont-img:hover > 
+  .cont__info .cont__info-title {
+    margin-top: 20px;
+  }
+
+  /*Botón*/
+
+  .button__button {
+    width: 150px;
+    height: 50px;
   }
   
-  .socialMedia__ico:hover {
-    border-radius: 50%;
-    background: var(--colorSecundario);
-    color: var(--colorQuinto);
+ /*Footer*/
+
+  .socialMedia { 
+    width: 24%;
+    height: auto;
   }
 }
