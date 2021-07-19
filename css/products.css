@@ -20,8 +20,6 @@ body {
 
 /*Header*/
 
-/*Header*/
-
 header {
   width: 90%;
   background: var(--varHeader);
@@ -29,6 +27,7 @@ header {
   position: fixed;
   top: 3%;
   left: 5%;
+  z-index: 1000;
 }
 
 .logo__img {
