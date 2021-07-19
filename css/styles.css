@@ -233,45 +233,7 @@ footer {
   color: var(--colorQuinto);
 }
 
-/*Inicio Media Querys. Implementado en dos versiones. Para pantallas de hasta de 800px y de hasta 370px.*/
-
-@media screen and (min-width: 451px) and (max-width:800px) {
-  
-  /*Header*/
-
-  header {
-    width: 90%;
-    background: var(--varHeader);
-    border-radius: 12px;
-    position: fixed;
-    top: 3%;
-    left: 5%;
-  }
-
-  /*Navegador*/
-  
-  .logo__img {
-    width: 20%;
-    float: left;
-    padding-top: 14px;
-    padding-left:30px
-  }
-
-  .menu__list {
-  display: inline-flex;
-  }
-
-  /*Main*/
-
-  .main__title {
-    font-size: 2em;
-    padding-top: .8em;
-  }
-
-  .main__subtitle {
-    font-size: 1em;
-  }
-}
+/*Inicio Media Querys. Implementado en dos versiones. Para pantallas de hasta de 450px y de hasta 200px.*/
 
 @media screen and (min-width: 200px) and (max-width:450px) {
 

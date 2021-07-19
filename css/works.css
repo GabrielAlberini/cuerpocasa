@@ -112,7 +112,6 @@ header {
   padding: 8% 0;
 }
 
-
 .works {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -130,7 +129,6 @@ header {
 
 .works__cont-img {
   position: relative;
-  box-shadow: rgba(0, 15px, 20px, 0.7);
 }
 
 /*Comienzo selección*/
@@ -304,9 +302,6 @@ display: inline-block;
     left: 5%;
   }
 
-  /*Navegador*/ 
-
-
   /*Main*/
   
   .logo__img {
@@ -359,7 +354,7 @@ display: inline-block;
     flex-direction: column;
     padding: 10px;
     transition: all ease-in-out 250ms;
-    padding-left: 10px;
+    padding-left: px;
   }
 
   .hide {

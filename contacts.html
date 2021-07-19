@@ -34,10 +34,20 @@
     <main>
 <!--Form-->    
         <div class="container">
+            <div class="formMaps">
+                <div class="formMaps__txt">
+                    <h2 class="formMaps__txt-titleMaps">¿Dónde nos encuentras?</h2>
+                    <p class="formMaps__txt-subtitleMaps">Estamos en todos lados por medio de las redes sociales, pero también nos encontramos en la Ciudad de Santa Fe.</p>
+                </div>
+                <img class="maps" src="img/mapa.png" alt="">
+            </div>  
             <div class="formContacts">
+                <div class="contContact__txt">
+                    <h3 class="contContact__txt-title">¿Trabajamos juntos?</h3>
+                </div>
                 <form class="formContacts__form" action="php" method="POST" enctype="multipart/form-data">
                     <fieldset class="formContacts__form-fieldset">
-                        <legend class="formContacts__form-legend">¿Quieres contactarme?</legend><br>      
+                        <legend class="formContacts__form-legend">¿Quién eres?</legend><br>      
                             <label class="formContacts__form-label" for="nombre">Nombre</label>
                                 <input class="formContacts__form-txt" type="text" maxlength="30" placeholder="Nombre"><br>
                             <label class="formContacts__form-label" for="apellido">Apellido</label> 
@@ -65,9 +75,6 @@
                         <input class="formContacts__form-reset" type="reset">
                     </fieldset> 
                 </form>
-            </div>
-            <div class="formMaps">
-                <img class="maps" src="img/mapa.png" alt="">
             </div>
         </div>
 <!--CV-->
