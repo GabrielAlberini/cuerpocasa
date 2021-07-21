@@ -23,7 +23,7 @@
   background-size: cover;
   background-position: center;
   z-index: -1000;
-  opacity: .2;
+  opacity: .1;
 }
 
 body {
@@ -159,7 +159,7 @@ header {
   padding: 3em;
   font-family: var(--tipografiaTxt);
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 35px;
 }
 

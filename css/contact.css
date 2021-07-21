@@ -165,6 +165,10 @@ header {
   font-size: 2.5em;  
 }
 
+.formMaps__txt-subtitleMaps {
+  font-size: 1.4em;
+}
+
 .formContacts__form{
   width: 50%;
   margin: auto;

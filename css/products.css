@@ -144,6 +144,7 @@ header {
 }
 
 .cont__txt-subtitle {
+  font-size: 1.4em;
   font-family: var(--tipografiaTxt);
 }
 

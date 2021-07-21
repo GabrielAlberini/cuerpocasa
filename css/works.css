@@ -22,11 +22,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../img/fotoPedidoXS12.png);
+  background-image: url(../img/fotoPedidoXS12.jpg);
   background-size: cover;
   background-position: center;
   z-index: -1000;
-  opacity: .23;
+  opacity: .11;
 }
 
 body {
