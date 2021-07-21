@@ -1,21 +1,37 @@
 :root {
+  /*Colores*/
   --colorPrimario: #94b0da;
   --colorSecundario: #8f91a2;
   --colorTerciario: #dcedff;
   --colorCuarto: #505a5b;
   --colorQuinto: #343f3e;
   --varHeader:#343f3eef;
+
+  /*Tipografías*/
+  --tipografiaTitles: 'Rubik', sans-serif;
+  --tipografiaTxt: 'Karla', sans-serif;
+}
+
+/*Imagen de fodo*/
+
+#fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/fotoCuerpo1.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1000;
+  opacity: .2;
 }
 
 body {
+  position: relative;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background: #010326;
-  font-family: 'Crimson Text', serif;
-  background-image: url(../img/fotoPedidoXS12bg.png);
-  background-size: cover;
-  background-position: center;
 }
 
 /*Header*/
@@ -30,15 +46,27 @@ header {
   z-index: 1000;
 }
 
-.logo__img {
-  width: 15%;
+.contLogonav {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+.cont__logo {
+  padding-top: 1.1em;
+  width: 30%;
+  height: auto;
   float: left;
-  padding-top: 10px;
-  padding-left:140px
+}
+
+.logo__img {
+  width: 40%;
+  height: auto;
+  float: left;
 }
 
 .menu__list {
-  width: 60%;
+  width: 45%;
   float: right;
   text-align: center;
   list-style: none;
@@ -56,7 +84,7 @@ header {
   font-size: 1em;
   text-decoration: none;
   letter-spacing: 1px;
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--tipografiaTxt);
   font-weight: 700;
   text-shadow: 1px 1px 9px rgb(133, 132, 199);
 }
@@ -67,7 +95,7 @@ header {
   text-decoration: none;
   letter-spacing: 1px;
   text-transform: lowercase;
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--tipografiaTxt);
   text-shadow: 1px 1px 9px rgb(133, 132, 199);
 }
 
@@ -82,12 +110,12 @@ header {
 
 .hide {
   padding: 16px;
-  margin-right: 20px;
   font-size: 18px;
   float: right;
   color: white;
   cursor: pointer;
   display: none;
+  font-family: var(--tipografiaTxt);
   letter-spacing: 1px;
   text-transform: lowercase;
   text-shadow: 1px 1px 9px rgb(133, 132, 199);
@@ -98,7 +126,7 @@ header {
 }
 
 .hide__span {
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--tipografiaTxt);
 }
 
 /*Textos main*/
@@ -108,13 +136,17 @@ header {
   margin: auto;
   text-align: center;
   padding-top: 6.5em;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700;
 }
 
-.cont__txt h2 {
+.cont__txt-title {
+  font-family: var(--tipografiaTitles);
   font-size: 2.5em;
 }
+
+.cont__txt-subtitle {
+  font-family: var(--tipografiaTxt);
+}
+
 
 /* Main-slider */
 
@@ -126,7 +158,7 @@ body{
 .slider {
   width: 60%;
   margin: auto;
-  overflow: hidden;
+  overflow: hidden; 
 }
 
 .slider ul {
@@ -163,8 +195,8 @@ img {
 }
 
 #separator {
-  width: 30%;
-  border: solid 1px black;
+  width: 25%;
+  border: solid 1px var(--colorQuinto);
   margin-top: 3em;
 }
 
@@ -195,8 +227,7 @@ img {
   outline: none;
   border-radius: 4px;
   font-size: 1em;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700;
+  font-family: var(--tipografiaTxt);
   cursor: pointer;
 }
 
@@ -271,19 +302,9 @@ display: inline-block;
 @media screen and (min-width: 200px) and (max-width:450px) {
 
   /*Header*/
-  
-  header {
-    width: 90%;
-    background: var(--varHeader);
-    border-radius: 12px;
-    position: fixed;
-  }
 
   .logo__img {
-    width: 30%;
-    float: left;
-    padding-top: 17px;
-    padding-left:20px
+    width: 100%;
   }
 
   /*Navegador*/

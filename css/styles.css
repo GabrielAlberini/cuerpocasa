@@ -1,20 +1,38 @@
 :root {
+  
+  /*Colores*/
   --colorPrimario: #94b0da;
   --colorSecundario: #8f91a2;
   --colorTerciario: #dcedff;
   --colorCuarto: #505a5b;
   --colorQuinto: #343f3e;
   --varHeader:#343f3eef;
+  
+  /*Tipografías*/
+  --tipografiaTitles: 'Rubik', sans-serif;
+  --tipografiaTxt: 'Karla', sans-serif;
+}
+
+/*Imagen de fondo*/
+
+#fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/fotoCuerpo5.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1000;
+  opacity: .2;
 }
 
 body {
+  position: relative;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Roboto Slab', serif;
-  background-image: url(../img/fotoCuerpo5bg.png);
-  background-size: cover;
-  background-position: center;
 }
 
 /*Header*/
@@ -28,15 +46,27 @@ header {
   left: 5%;
 }
 
-.logo__img {
-  width: 15%;
+.contLogonav {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+.cont__logo {
+  padding-top: 1.1em;
+  width: 30%;
+  height: auto;
   float: left;
-  padding-top: 10px;
-  padding-left:140px
+}
+
+.logo__img {
+  width: 40%;
+  height: auto;
+  float: left;
 }
 
 .menu__list {
-  width: 60%;
+  width: 45%;
   float: right;
   text-align: center;
   list-style: none;
@@ -54,7 +84,7 @@ header {
   font-size: 1em;
   text-decoration: none;
   letter-spacing: 1px;
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--tipografiaTxt);
   font-weight: 700;
   text-shadow: 1px 1px 9px rgb(133, 132, 199);
 }
@@ -65,7 +95,7 @@ header {
   text-decoration: none;
   letter-spacing: 1px;
   text-transform: lowercase;
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--tipografiaTxt);
   text-shadow: 1px 1px 9px rgb(133, 132, 199);
 }
 
@@ -80,11 +110,11 @@ header {
 
 .hide {
   padding: 16px;
-  margin-right: 20px;
   font-size: 18px;
   float: right;
   color: white;
   cursor: pointer;
+  font-family: var(--tipografiaTxt);
   display: none;
   letter-spacing: 1px;
   text-transform: lowercase;
@@ -107,8 +137,7 @@ header {
   width: 100%;
   text-align: center;
   font-size: 1.4em;
-  font-weight: 600;
-  margin: 10% 0;
+  padding-top: 8%;
 }
 
 .main__cont {
@@ -130,18 +159,26 @@ header {
 /*Fin edición selección.*/
 
 .main__title {
+  font-family: var(--tipografiaTitles);
   font-size: 60px;
   margin-bottom: 0;
 }
 
 .main__subtitle {
+  font-family: var(--tipografiaTxt);
   font-size: 30px;
   margin-top: 0;
 }
 
+.main__txtMain {
+  font-family: var(--tipografiaTxt);
+  line-height: 40px;
+  font-weight: 300;
+}
+
 #separator {
   width: 30%;
-  border: solid 1px black;
+  border: solid 1px var(--colorCuarto);
 }
 
 /*Botón*/
@@ -161,8 +198,7 @@ header {
   outline: none;
   border-radius: 4px;
   font-size: 0.7em;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700;
+  font-family: var(--tipografiaTxt);
   cursor: pointer;
 }
 
@@ -171,7 +207,9 @@ header {
   color: #fff;
 }
 
-video {
+/*Video*/
+
+.cont__video-video {
   width: 500px;
   height: 500px;
 }
@@ -198,7 +236,6 @@ video {
 .curriculumVitae:hover {
   border-radius: 50%;
   background: var(--colorPrimario);
-  box-shadow: 2px 2px 4px#999;
 }
 
 /*Footer*/
@@ -238,20 +275,10 @@ footer {
 @media screen and (min-width: 200px) and (max-width:450px) {
 
   /*Header*/
-  
-  header {
-    width: 90%;
-    background: var(--varHeader);
-    border-radius: 12px;
-    position: fixed;
-  }
 
-  .logo__img {
-    width: 30%;
-    float: left;
-    padding-top: 17px;
-    padding-left:20px
-  }
+.logo__img {
+  width: 100%;
+}
 
   /*Navegador*/
 
@@ -273,6 +300,11 @@ footer {
 
   /*Main*/
 
+  .main__cont {
+    width: 100%;
+    padding: 20px 0 20px 0;
+  }
+
   .main__title {
     font-size: 1.7em;
     padding-top: 2em;
@@ -285,9 +317,12 @@ footer {
 
   .main__txtMain {
     font-size: .8em;
+    line-height: 28px;
   }
 
-  video {
+  /*Video*/
+
+  .cont__video-video {
     width: 280px;
     height: 280px;
   }

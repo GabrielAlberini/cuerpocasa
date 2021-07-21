@@ -1,19 +1,36 @@
 :root {
+  /*Colores*/
   --colorPrimario: #94b0da;
   --colorSecundario: #8f91a2;
   --colorTerciario: #dcedff;
   --colorCuarto: #505a5b;
   --colorQuinto: #343f3e;
   --varHeader:#343f3eef;
+  /*Tipografías*/
+  --tipografiaTitles: 'Rubik', sans-serif;
+  --tipografiaTxt: 'Karla', sans-serif;
+}
+
+/*Background y estilos body*/
+
+#fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/fotoCuerpo11.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1000;
+  opacity: .2;
 }
 
 body {
+  position: relative;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Roboto Slab', serif;
-  background-image: url(../img/fotoCuerpo11bg.png);
-  background-size: cover;
 }
 
 /*Header*/
@@ -27,15 +44,27 @@ header {
   left: 5%;
 }
 
-.logo__img {
-  width: 15%;
+.contLogonav {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+.cont__logo {
+  padding-top: 1.1em;
+  width: 30%;
+  height: auto;
   float: left;
-  padding-top: 10px;
-  padding-left:140px
+}
+
+.logo__img {
+  width: 40%;
+  height: auto;
+  float: left;
 }
 
 .menu__list {
-  width: 60%;
+  width: 45%;
   float: right;
   text-align: center;
   list-style: none;
@@ -53,7 +82,7 @@ header {
   font-size: 1em;
   text-decoration: none;
   letter-spacing: 1px;
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--tipografiaTxt);
   font-weight: 700;
   text-shadow: 1px 1px 9px rgb(133, 132, 199);
 }
@@ -64,7 +93,7 @@ header {
   text-decoration: none;
   letter-spacing: 1px;
   text-transform: lowercase;
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--tipografiaTxt);
   text-shadow: 1px 1px 9px rgb(133, 132, 199);
 }
 
@@ -79,12 +108,12 @@ header {
 
 .hide {
   padding: 16px;
-  margin-right: 20px;
   font-size: 18px;
   float: right;
   color: white;
   cursor: pointer;
   display: none;
+  font-family: var(--tipografiaTxt);
   letter-spacing: 1px;
   text-transform: lowercase;
   text-shadow: 1px 1px 9px rgb(133, 132, 199);
@@ -105,33 +134,37 @@ header {
 
 .main {
   width: 80%;
-  padding-top: 13%;
+  padding-top: 10%;
 }
 
 .cont__img {
   width: 50%;
-  justify-content: center;
-  display: block;
   margin: auto;
 }
 
 .main__img {
   width: 100%;
-  height: auto;
   box-shadow: 3px 10px 20px rgba(0, 0, 0, .50);
+}
+
+.main__title {
+  font-size: 2.5em;
+  font-family: var(--tipografiaTitles);
+  text-align: center;
 }
 
 .main__txt {
   width: 70%;
   margin: auto;
   padding: 3em;
+  font-family: var(--tipografiaTxt);
   text-align: center;
   font-size: 1.2em;
-  font-weight: 600;
   line-height: 35px;
 }
 
 /*Comienzo selección*/
+
 .main__txt::selection {
   background: var(--colorPrimario);
   color: black;
@@ -160,7 +193,6 @@ header {
 .curriculumVitae:hover {
   border-radius: 50%;
   background: var(--colorPrimario);
-  box-shadow: 2px 2px 4px#999;
 }
 
 /*Footer*/
@@ -199,18 +231,10 @@ footer {
 
   /*Header*/
   
-  header {
-    width: 90%;
-    background: var(--varHeader);
-    border-radius: 12px;
-    position: fixed;
-  }
+  /*Header*/
 
   .logo__img {
-    width: 30%;
-    float: left;
-    padding-top: 17px;
-    padding-left:20px
+    width: 100%;
   }
 
   /*Navegador*/

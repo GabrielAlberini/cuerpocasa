@@ -2,39 +2,47 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/works.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Rubik:wght@300&display=swap" rel="stylesheet"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>CuerpoCasa</title>
+    <link rel="shortcut icon" href="img/icopestana.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap" rel="stylesheet"> 
 </head>
 <body>
+<!--Imagen de fondo-->
+    <div id="fondo"></div>    
 <!--Encabezado-->
 <header>
-    <nav>
-        <div class="cont__logo">
-            <a class="logo__link" href="index.html"><img class="logo__img" src="img/logo1.png" alt="logo de cuerpo casa"></a>
-        </div>
-        <ul class="menu__list">
-            <li class="menu__nav-li"><a class="menu__nav-link" href="index.html">HOME</a></li>
-            <li class="menu__nav-li"><a class="menu__nav-link" href="aboutme.html">ABOUT ME</a></li>
-            <li class="menu__nav-li"><a class="menu__nav-link--active" href="#">WORKS</a></li>
-            <li class="menu__nav-li"><a class="menu__nav-link" href="description.html">DESCRIPTION</a></li>
-            <li class="menu__nav-li"><a class="menu__nav-link" href="products.html">PRODUCTS</a></li>
-            <li class="menu__nav-li"><a class="menu__nav-link" href="contacts.html">CONTACT</a></li>
-        </ul>
-        <div class="hide"><i class="fa fa-bars hide__icon" aria-hidden="true"></i><span class="hide__span">Menu</span></div>
-    </nav>
+    <div class="contLogonav">
+        <nav>
+            <div class="cont__logo">
+                <a class="logo__link" href="index.html"><img class="logo__img" src="img/logo1.png" alt="logo de cuerpo casa"></a>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__nav-li"><a class="menu__nav-link" href="index.html">HOME</a></li>
+                <li class="menu__nav-li"><a class="menu__nav-link" href="aboutme.html">ABOUT ME</a></li>
+                <li class="menu__nav-li"><a class="menu__nav-link--active" href="#">WORKS</a></li>
+                <li class="menu__nav-li"><a class="menu__nav-link" href="products.html">PRODUCTS</a></li>
+                <li class="menu__nav-li"><a class="menu__nav-link" href="contacts.html">CONTACT</a></li>
+            </ul>
+            <div class="hide"><i class="fa fa-bars hide__icon" aria-hidden="true"></i><span class="hide__span">Menu</span></div>
+        </nav>
+    </div>    
 </header>
 <!--Contenido-->
     <main>
         <div class="container">
+            <div class="cont__txtWorks">
+                <h1 class="cont__txtWorks-title">Obras y proyectos</h1>
+                <p class="cont__txtWorks-txt">A continuación una recopilación de algunos trabajos realizados en estos años. Cada uno de ellos esta redireccionado a un link particular. ¡Que lo disfruten!</p>
+            </div>
             <div class="works">
                 <div class="works__cont-img">
                     <img loading="lazy" class="works__cont-img-img" src="img/fotoCuerpo23.jpg" alt="foto de trabajo">
@@ -157,7 +165,7 @@
                     <p class="works__cont-txt-txt">Al reconocer nuestra fragilidad, nos conectamos con el presente. De otra forma es imposible. Al no reconocer nuestra propia vulnerabilidad el cuerpo se traslada al futuro o descansa en el pasado. Reconocer nuestras faltas es entender que lo único eterno es el cambio. Frente a un mundo que se acelera minuto a minuto, parar y observar es solo de quien se anime a hacerlo. O pregúntate si alguna vez te miraste al espejo con solo la intención de descubrir que tenemos una nariz, o una oreja, o algunos lunares. Damos por hecho que llevamos un cuerpo sin si quiera reconocerlo. Somos el cuerpo. La verdad esta acá, sobre todo para adentro. La metafísica de las cosas no tiene que ver con un aura lejana, tiene que ver con la transpiración, el tacto, la mirada. El tiempo no existe si no lo entendemos como lo único que tiene sentido de ser. La mariposa transmuta de la quietud al vuelo en un viaje hacia dentro. Con nosotros pasa lo mismo, nacemos solos y morimos solo, en el transcurso, el viaje hacia lo verdadero, que en fin no es sino un sin fin de nosotros o nosotras. Y el amor, que siempre es el mismo. Al final, solo es un suspiro.</p>
                 </div>    
                 <div class="works__cont-img">
-                    <img loading="lazy" class="works__cont-img-img" src="img/fotoCollagegrande1.jpg" alt="foto de trabajo">
+                    <img loading="lazy" class="works__cont-img-img" src="img/fotoCuerpo8.jpg" alt="foto de trabajo">
                     <div class="cont__info">
                         <h3 class="cont__info-title">Mapa de supervivencia</h3>
                         <p class="cont__info-txt">Realizado en 2018</p>
@@ -200,7 +208,7 @@
         </div>
 <!--CV-->
         <div class="curriculumVitae">
-            <a class="curriculumVitae__link" href="https://drive.google.com/file/d/1kOhjMI9TkeCCBMjVnj6xB81MeVLfvrJP/view?usp=sharing"><i class="curriculumVitae__img far fa-file-alt"></i>
+            <a class="curriculumVitae__link" href="https://drive.google.com/file/d/1kOhjMI9TkeCCBMjVnj6xB81MeVLfvrJP/view?usp=sharing"><i class="curriculumVitae__img fas fa-portrait"></i>
             </a>
         </div>
     </main>

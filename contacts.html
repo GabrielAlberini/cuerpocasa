@@ -4,31 +4,34 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;600&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Rubik:wght@300&display=swap" rel="stylesheet"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>CuerpoCasa</title>
+    <link rel="shortcut icon" href="img/icopestana.png">
 </head>
 <body>
+<!--Imagen de fondo-->
+    <div id="fondo"></div>  
 <!--Encabezado-->
     <header>
-        <nav>
-            <div class="cont__logo">
-                <a class="logo__link" href="index.html"><img class="logo__img" src="img/logo1.png" alt="logo de cuerpo casa"></a>
-            </div>
-            <ul class="menu__list">
-                <li class="menu__nav-li"><a class="menu__nav-link" href="index.html">HOME</a></li>
-                <li class="menu__nav-li"><a class="menu__nav-link" href="aboutme.html">ABOUT ME</a></li>
-                <li class="menu__nav-li"><a class="menu__nav-link" href="works.html">WORKS</a></li>
-                <li class="menu__nav-li"><a class="menu__nav-link" href="description.html">DESCRIPTION</a></li>
-                <li class="menu__nav-li"><a class="menu__nav-link" href="products.html">PRODUCTS</a></li>
-                <li class="menu__nav-li"><a class="menu__nav-link--active" href="#">CONTACT</a></li>
-            </ul>
-            <div class="hide"><i class="fa fa-bars hide__icon" aria-hidden="true"></i><span class="hide__span">Menu</span></div>
-        </nav>
+        <div class="contLogonav">
+            <nav>
+                <div class="cont__logo">
+                    <a class="logo__link" href="index.html"><img class="logo__img" src="img/logo1.png" alt="logo de cuerpo casa"></a>
+                </div>
+                <ul class="menu__list">
+                    <li class="menu__nav-li"><a class="menu__nav-link" href="index.html">HOME</a></li>
+                    <li class="menu__nav-li"><a class="menu__nav-link" href="aboutme.html">ABOUT ME</a></li>
+                    <li class="menu__nav-li"><a class="menu__nav-link" href="works.html">WORKS</a></li>
+                    <li class="menu__nav-li"><a class="menu__nav-link" href="products.html">PRODUCTS</a></li>
+                    <li class="menu__nav-li"><a class="menu__nav-link--active" href="#">CONTACT</a></li>
+                </ul>
+                <div class="hide"><i class="fa fa-bars hide__icon" aria-hidden="true"></i><span class="hide__span">Menu</span></div>
+            </nav>
+        </div>
     </header>
 <!--Contenido-->
     <main>
@@ -36,14 +39,14 @@
         <div class="container">
             <div class="formMaps">
                 <div class="formMaps__txt">
-                    <h2 class="formMaps__txt-titleMaps">¿Dónde nos encuentras?</h2>
-                    <p class="formMaps__txt-subtitleMaps">Estamos en todos lados por medio de las redes sociales, pero también nos encontramos en la Ciudad de Santa Fe.</p>
+                    <h2 class="formMaps__txt-titleMaps">¿Tomamos un café?</h2>
+                    <p class="formMaps__txt-subtitleMaps">Mi trabajo se encuntra principalmente en las redes, pero si quieres nos podemos encontrar para charlar del arte o de las palomas o del rio. Para ello, te tienes que venir a Santa Fe (la cuna del mosquito).</p>
                 </div>
                 <img class="maps" src="img/mapa.png" alt="">
             </div>  
             <div class="formContacts">
                 <div class="contContact__txt">
-                    <h3 class="contContact__txt-title">¿Trabajamos juntos?</h3>
+                    <h3 class="contContact__txt-title">¿Me cuentas tu propuesta?</h3>
                 </div>
                 <form class="formContacts__form" action="php" method="POST" enctype="multipart/form-data">
                     <fieldset class="formContacts__form-fieldset">
@@ -71,6 +74,8 @@
                                 <option class="formContacts__form-txt" value="propagandas">Amigos</option>
                                 <option class="formContacts__form-txt" value="propagandas">Otra</option>
                             </select><br><br>
+                            <label class="formContacts__form-label" for="nombre">Dejame un mensaje (o cuéntame un secreto)</label><br>  
+                                <textarea class="formContacts__form-textarea" name="" id="" cols="43" rows="5" placeholder="Mensaje"></textarea><br><br>
                         <input class="formContacts__form-submit" type="submit">
                         <input class="formContacts__form-reset" type="reset">
                     </fieldset> 
@@ -79,7 +84,7 @@
         </div>
 <!--CV-->
     <div class="curriculumVitae">
-        <a class="curriculumVitae__link" href="https://drive.google.com/file/d/1kOhjMI9TkeCCBMjVnj6xB81MeVLfvrJP/view?usp=sharing"><i class="curriculumVitae__img far fa-file-alt"></i>
+        <a class="curriculumVitae__link" href="https://drive.google.com/file/d/1kOhjMI9TkeCCBMjVnj6xB81MeVLfvrJP/view?usp=sharing"><i class="curriculumVitae__img fas fa-portrait"></i>
         </a>
     </div>
 </main>
@@ -99,3 +104,4 @@
     </script>
 </body>
 </html>
+

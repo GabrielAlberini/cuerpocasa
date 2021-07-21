@@ -1,24 +1,40 @@
 :root {
+
+  /*Colores*/
   --colorPrimario: #94b0da;
   --colorSecundario: #8f91a2;
   --colorTerciario: #dcedff;
   --colorCuarto: #505a5b;
   --colorQuinto: #343f3e;
   --varHeader:#343f3eef;
-  --varWorks:#94b0dad5;
+  --varWorks:#94b0dae0;
+
+  /*Tipografías*/
+  --tipografiaTitles: 'Rubik', sans-serif;
+  --tipografiaTxt: 'Karla', sans-serif;
+}
+
+/*Imagen de fondo*/
+
+#fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/fotoPedidoXS12.png);
+  background-size: cover;
+  background-position: center;
+  z-index: -1000;
+  opacity: .23;
 }
 
 body {
+  position: relative;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Crimson Text', serif;
-  background-image: url(../img/fotoCuerpo3bg.png);
-  background-size: cover;
-  background-position: center;
 }
-  
-/*Header*/
 
 /*Header*/
 
@@ -32,15 +48,27 @@ header {
   z-index: 1000;
 }
 
-.logo__img {
-  width: 15%;
+.contLogonav {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+.cont__logo {
+  padding-top: 1.1em;
+  width: 30%;
+  height: auto;
   float: left;
-  padding-top: 10px;
-  padding-left:140px
+}
+
+.logo__img {
+  width: 40%;
+  height: auto;
+  float: left;
 }
 
 .menu__list {
-  width: 60%;
+  width: 45%;
   float: right;
   text-align: center;
   list-style: none;
@@ -58,7 +86,7 @@ header {
   font-size: 1em;
   text-decoration: none;
   letter-spacing: 1px;
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--tipografiaTxt);
   font-weight: 700;
   text-shadow: 1px 1px 9px rgb(133, 132, 199);
 }
@@ -69,7 +97,7 @@ header {
   text-decoration: none;
   letter-spacing: 1px;
   text-transform: lowercase;
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--tipografiaTxt);
   text-shadow: 1px 1px 9px rgb(133, 132, 199);
 }
 
@@ -84,12 +112,12 @@ header {
 
 .hide {
   padding: 16px;
-  margin-right: 20px;
   font-size: 18px;
   float: right;
   color: white;
   cursor: pointer;
   display: none;
+  font-family: var(--tipografiaTxt);
   letter-spacing: 1px;
   text-transform: lowercase;
   text-shadow: 1px 1px 9px rgb(133, 132, 199);
@@ -100,10 +128,33 @@ header {
 }
 
 .hide__span {
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--tipografiaTxt);
 }
 
 /*Main*/
+/*Textos de bienvenida*/
+
+.cont__txtWorks {
+  width: 80%;
+  padding-top: 20px;
+  height: auto;
+  text-align: center;
+  margin: auto;
+  z-index: 2000; /*Tiene z-index porque si no el grid lo tapa*/
+}
+
+.cont__txtWorks-title {
+  font-size: 2.5em;
+  font-family: var(--tipografiaTitles);
+}
+
+.cont__txtWorks-txt {
+  font-size: 1.2em;
+  font-family: var(--tipografiaTxt);
+  padding-bottom: 40px;
+}
+
+/*Grid de trabajos*/
 
 .container {
   width: 80%;
@@ -116,6 +167,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
+  gap: 7px;
 }
 
 .works__cont-txt, 
@@ -152,9 +204,11 @@ header {
 }
 
 .works__cont-txt-txt {
+  font-family: var(--tipografiaTxt);
   display: flex;
   align-items: center;
   font-size: 15px;
+  line-height: 18px;
 }
 
 /*Animacion en imagenes*/
@@ -179,7 +233,7 @@ header {
 
 .cont__info-title {
   color: var(--colorQuinto);
-  font-family: 'Roboto Slab', serif;
+  font-family: var(--tipografiaTitles);
   font-weight: 700;
   font-size: 1.7em;
   margin-bottom: 120px;
@@ -188,6 +242,7 @@ header {
 }
 
 .cont__info-txt {
+  font-family: var(--tipografiaTxt);
   color: var(--colorCuarto);
   font-size: 1.2em;
   max-width: 12em;
@@ -211,13 +266,14 @@ header {
   height: 50px;
   border: none;
   color: var(--colorTerciario);
-  background: var(--colorCuarto);
+  background: var(--colorSecundario);
   transition: ease 0.3s;
   outline: none;
   border-radius: 4px;
-  font-family: 'Roboto Slab', serif;
-  font-size: .8em;
+  font-size: 1em;
+  font-family: var(--tipografiaTxt);
   cursor: pointer;
+  border: 1px solid var(--colorTerciario);
 }
 
 .button__button:hover {
@@ -247,7 +303,6 @@ header {
 .curriculumVitae:hover {
   border-radius: 50%;
   background: var(--colorPrimario);
-  box-shadow: 2px 2px 4px rgba(153, 153, 153, 0.712);
 }
 
 /*Footer*/
@@ -326,21 +381,11 @@ display: inline-block;
 }
 
 @media screen and (min-width: 200px) and (max-width:450px) {
-
-  /*Header*/
   
-  header {
-    width: 90%;
-    background: var(--varHeader);
-    border-radius: 12px;
-    position: fixed;
-  }
+  /*Header*/
 
   .logo__img {
-    width: 30%;
-    float: left;
-    padding-top: 17px;
-    padding-left:20px
+    width: 100%;
   }
 
   /*Navegador*/
