@@ -1,0 +1,47 @@
+  /*Footer*/
+
+  footer {
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background-color: $colorQuinto;
+    
+    .socialMedia {
+        width: 24%;
+        height: 45px;
+        margin: auto;
+        @media screen and (min-width: 200px) and (max-width:450px) {
+          width: 24%;
+          height: 45px;
+          margin: auto;
+        }
+      }
+
+      .socialMedia__ico {
+        color: $colorTerciario;
+        text-decoration: none;
+        background-color: $colorQuinto;
+        padding: 10px;
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        margin-top: 6px;
+        &:hover {
+          border-radius: 50%;
+          background: $colorSecundario;
+          color: $colorQuinto;
+        }
+        @media screen and (min-width: 200px) and (max-width:450px) {
+          padding: 10px;
+          width: 18px;
+          height: 18px;
+          margin-top: 8px;
+        }
+      }    
+  }
+  
+  
+  
+  
+  
+  

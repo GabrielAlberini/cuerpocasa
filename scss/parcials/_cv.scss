@@ -1,0 +1,27 @@
+/* Curriculum Vitae */
+
+.curriculumVitae {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 65px;
+    right: 20px;
+
+    .curriculumVitae__img {
+        font-size: 40px;
+        border-radius: 50%;
+        color: black;
+        position: relative;
+        top:17%;
+        left: 27%;
+      }
+
+      &:hover {
+        border-radius: 50%;
+        background: $colorPrimario;
+      }
+  }
+  
+  
+  
+  

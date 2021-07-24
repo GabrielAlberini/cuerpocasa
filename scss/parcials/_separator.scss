@@ -1,0 +1,15 @@
+/* Separator */
+
+%separator{
+    width: 30%;
+    border: solid 1px $colorCuarto;
+  }
+  
+  #separator {
+    @extend %separator;
+  }
+
+  #separator__products {
+    @extend %separator;
+    margin-top: 40px;
+  }

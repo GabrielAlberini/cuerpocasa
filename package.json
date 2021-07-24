@@ -1,0 +1,19 @@
+{
+  "name": "cuerpocasa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielAlberini/cuerpocasa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabrielAlberini/cuerpocasa/issues"
+  },
+  "homepage": "https://github.com/GabrielAlberini/cuerpocasa#readme"
+}

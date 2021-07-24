@@ -1,0 +1,49 @@
+/* Image bg*/
+
+%img__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1000;
+}
+
+/* Fondo index */
+#fondo {
+    @extend %img__background;
+    background-image: url(../img/fotoCuerpo5.jpg);
+    opacity: .2;
+  }
+
+/*Fondo aboutme */
+#fondo {
+    @extend %img__background;
+    background-image: url(../img/fotoCuerpo11.jpg);
+    opacity: .1;
+  }
+
+/* Fondo works */
+#fondo {
+  @extend %img__background;
+  background-image: url(../img/fotoPedidoXS12.jpg);
+  opacity: .11;
+}
+
+/* Fondo products */
+#fondo {
+  @extend %img__background;
+  background-image: url(../img/fotoCuerpo1.jpg);
+  opacity: .2;
+}
+
+/* Fondo contacts */
+#fondo {
+  @extend %img__background;
+  background-image: url(../img/fotoCuerpo16.jpg);
+  opacity: .2;
+}
+
+  

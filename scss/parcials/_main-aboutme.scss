@@ -1,0 +1,47 @@
+/* Main aboutme */
+
+.container__aboutme {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin:auto;
+    .main__aboutme {
+        width: 80%;
+        padding-top: 10%;
+        @media screen and (min-width: 200px) and (max-width:450px) {
+            padding-top: 7em;
+        }
+      }
+      .cont__img-aboutme {
+        width: 50%;
+        margin: auto;
+        @media screen and (min-width: 200px) and (max-width:450px) {
+            width: 100%;
+        }
+      }
+      .main__img-aboutme {
+        width: 100%;
+        box-shadow: $boxShadow;
+      }
+      .main__title-aboutme {
+        font-size: 1.5em;
+        font-family: $tipografiaTitles;
+        text-align: center;
+      }
+      .main__txt-aboutme {
+        width: 70%;
+        margin: auto;
+        padding: 3em;
+        font-family: $tipografiaTxt;
+        text-align: center;
+        font-size: 1.4em;
+        line-height: 35px;
+        @media screen and (min-width: 200px) and (max-width:450px) {
+            width: 100%;
+            padding: 0;
+            font-size: .8em;
+            line-height: 25px;
+            padding: 20px 0 20px 0;
+        }
+      } 
+  }

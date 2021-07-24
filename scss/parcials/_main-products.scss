@@ -1,0 +1,64 @@
+/* Main products */
+/* Textos de cabecera */
+
+.main__products {
+  text-align: center;
+}
+
+.cont__products-txt {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 6.5em;
+    .cont__products-title {
+        font-family: $tipografiaTitles;
+        font-size: 1.5em;
+      }
+      .cont__products-subtitle {
+        font-size: 1em;
+        font-family: $tipografiaTxt;
+      }
+}
+
+/* Main-slider */
+
+.slider {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    @media screen and (min-width: 200px) and (max-width:450px) {
+        width: 80%;
+        margin-bottom: 0px;
+    }
+    .slider-ul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+        height: 400px;
+        animation: cambio 10s infinite alternate linear;
+        @media screen and (min-width: 200px) and (max-width:450px) {
+            height: 150px;
+        }
+        @keyframes cambio {
+            0% {margin-left: 0;}
+            20% {margin-left: -0%;}
+          
+            25% {margin-left: -100%;}
+            45% {margin-left: -100%;}
+          
+            50% {margin-left: -200%;}
+            70% {margin-left: -200%;}
+          
+            75% {margin-left: -300%;}
+            100% {margin-left: -300%;}
+          }
+        .slider-li {
+            list-style: none;
+            width: 100%;
+          }
+          .slider-img {
+            position: relative;
+            width: 100%;
+          }
+      }
+  }
