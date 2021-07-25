@@ -6,7 +6,7 @@
 /* Box Shadow */
 /* Partes en común */
 /* Image bg*/
-#fondo {
+#fondo__contacts, #fondo__products, #fondo__works, #fondo__aboutme, #fondo__index {
   position: absolute;
   top: 0;
   left: 0;
@@ -18,31 +18,31 @@
 }
 
 /* Fondo index */
-#fondo {
+#fondo__index {
   background-image: url(../img/fotoCuerpo5.jpg);
   opacity: 0.2;
 }
 
 /*Fondo aboutme */
-#fondo {
+#fondo__aboutme {
   background-image: url(../img/fotoCuerpo11.jpg);
   opacity: 0.1;
 }
 
 /* Fondo works */
-#fondo {
+#fondo__works {
   background-image: url(../img/fotoPedidoXS12.jpg);
   opacity: 0.11;
 }
 
 /* Fondo products */
-#fondo {
+#fondo__products {
   background-image: url(../img/fotoCuerpo1.jpg);
   opacity: 0.2;
 }
 
 /* Fondo contacts */
-#fondo {
+#fondo__contacts {
   background-image: url(../img/fotoCuerpo16.jpg);
   opacity: 0.2;
 }
@@ -170,7 +170,7 @@ header .hide:hover {
   transition: ease 0.3s;
   outline: none;
   border-radius: 4px;
-  font-size: 0.7em;
+  font-size: 1em;
   font-family: "Karla", sans-serif;
   cursor: pointer;
 }

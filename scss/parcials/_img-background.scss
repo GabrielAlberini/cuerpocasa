@@ -12,35 +12,35 @@
 }
 
 /* Fondo index */
-#fondo {
+#fondo__index {
     @extend %img__background;
     background-image: url(../img/fotoCuerpo5.jpg);
     opacity: .2;
   }
 
 /*Fondo aboutme */
-#fondo {
+#fondo__aboutme {
     @extend %img__background;
     background-image: url(../img/fotoCuerpo11.jpg);
     opacity: .1;
   }
 
 /* Fondo works */
-#fondo {
+#fondo__works {
   @extend %img__background;
   background-image: url(../img/fotoPedidoXS12.jpg);
   opacity: .11;
 }
 
 /* Fondo products */
-#fondo {
+#fondo__products {
   @extend %img__background;
   background-image: url(../img/fotoCuerpo1.jpg);
   opacity: .2;
 }
 
 /* Fondo contacts */
-#fondo {
+#fondo__contacts {
   @extend %img__background;
   background-image: url(../img/fotoCuerpo16.jpg);
   opacity: .2;
