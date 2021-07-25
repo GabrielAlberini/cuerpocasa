@@ -19,31 +19,31 @@
 
 /* Fondo index */
 #fondo {
-  background: url(https://i.ibb.co/r7FccLq/foto-Cuerpo5.jpg);
+  background-image: url(../img/fotoCuerpo5.jpg);
   opacity: 0.2;
 }
 
 /*Fondo aboutme */
 #fondo {
-  background-image: url(https://i.ibb.co/qYRrCpJ/foto-Cuerpo11.jpg);
+  background-image: url(../img/fotoCuerpo11.jpg);
   opacity: 0.1;
 }
 
 /* Fondo works */
 #fondo {
-  background-image: url(https://i.ibb.co/TvDFt44/foto-Pedido-XS12.jpg);
+  background-image: url(../img/fotoPedidoXS12.jpg);
   opacity: 0.11;
 }
 
 /* Fondo products */
 #fondo {
-  background-image: url(https://i.ibb.co/p2hMzCj/foto-Cuerpo1.jpg);
+  background-image: url(../img/fotoCuerpo1.jpg);
   opacity: 0.2;
 }
 
 /* Fondo contacts */
 #fondo {
-  background-image: url(https://i.ibb.co/LpBZYhL/foto-Cuerpo16.jpg);
+  background-image: url(../img/fotoCuerpo16.jpg);
   opacity: 0.2;
 }
 
