@@ -96,11 +96,3 @@ header {
           }
       }
   }   
-
-/*Se destabiliza el header la página works en responsive por alguna razón que se me escapa.*/
-
-  .header__works {
-    @media screen and (min-width: 200px) and (max-width:450px) {
-     width: 85%;
-  }
-  }

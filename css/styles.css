@@ -150,13 +150,6 @@ header .hide .hide__icon {
   color: var(--colorPrimario);
 }
 
-/*Se destabiliza el header la página works en responsive por alguna razón que se me escapa.*/
-@media screen and (min-width: 200px) and (max-width: 450px) {
-  .header__works {
-    width: 85%;
-  }
-}
-
 /* Separator */
 #separator__products, #separator {
   width: 30%;
@@ -517,6 +510,13 @@ body {
   width: 400px;
   height: 400px;
   margin: 20px;
+}
+@media screen and (min-width: 200px) and (max-width: 450px) {
+  .container__works .works__cont-txt,
+.container__works .works__cont-img {
+    width: auto;
+    height: auto;
+  }
 }
 .container__works .works__cont-img {
   position: relative;
