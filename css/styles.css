@@ -62,23 +62,23 @@ header .contLogonav {
   height: auto;
   margin: auto;
 }
-header .cont__logo {
+header .contLogonav .cont__logo {
   padding-top: 1.1em;
   width: 30%;
   height: auto;
   float: left;
 }
-header .logo__img {
+header .contLogonav .logo__img {
   width: 40%;
   height: auto;
   float: left;
 }
 @media screen and (min-width: 200px) and (max-width: 450px) {
-  header .logo__img {
+  header .contLogonav .logo__img {
     width: 100%;
   }
 }
-header .menu__list {
+header .contLogonav .menu__list {
   width: 45%;
   float: right;
   text-align: center;
@@ -86,17 +86,17 @@ header .menu__list {
   overflow: hidden;
 }
 @media screen and (min-width: 200px) and (max-width: 450px) {
-  header .menu__list {
+  header .contLogonav .menu__list {
     display: none;
   }
 }
-header .menu__nav-li {
+header .contLogonav .menu__nav-li {
   display: inline-block;
   padding: 10px;
   transition: all ease-in-out 250ms;
 }
 @media screen and (min-width: 200px) and (max-width: 450px) {
-  header .menu__nav-li .menu__nav-li {
+  header .contLogonav .menu__nav-li .menu__nav-li {
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -104,16 +104,7 @@ header .menu__nav-li {
     padding-left: 10px;
   }
 }
-header .menu__nav-link--active {
-  color: #94b0da;
-  font-size: 1em;
-  text-decoration: none;
-  letter-spacing: 1px;
-  font-family: "Karla", sans-serif;
-  font-weight: 700;
-  text-shadow: 1px 1px 9px #8584c7;
-}
-header .menu__nav-link {
+header .contLogonav .menu__nav-link {
   color: #dcedff;
   font-size: 1em;
   text-decoration: none;
@@ -122,12 +113,17 @@ header .menu__nav-link {
   font-family: "Karla", sans-serif;
   text-shadow: 1px 1px 9px #8584c7;
 }
-header .menu__nav-link:hover {
+header .contLogonav .menu__nav-link:hover {
   color: #94b0da;
 }
-header .hide__icon {
-  padding: 5px;
-  color: var(--colorPrimario);
+header .contLogonav .menu__nav-link--active {
+  color: #94b0da;
+  font-size: 1em;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  text-shadow: 1px 1px 9px #8584c7;
 }
 header .hide {
   padding: 16px;
@@ -147,6 +143,17 @@ header .hide:hover {
 @media screen and (min-width: 200px) and (max-width: 450px) {
   header .hide {
     display: block;
+  }
+}
+header .hide .hide__icon {
+  padding: 5px;
+  color: var(--colorPrimario);
+}
+
+/*Se destabiliza el header la página works en responsive por alguna razón que se me escapa.*/
+@media screen and (min-width: 200px) and (max-width: 450px) {
+  .header__works {
+    width: 85%;
   }
 }
 
@@ -247,19 +254,19 @@ header .hide:hover {
 
 /* Curriculum Vitae */
 .curriculumVitae {
-  width: 60px;
-  height: 60px;
+  display: flex;
+  width: 45px;
+  height: 45px;
   position: fixed;
   bottom: 65px;
   right: 20px;
 }
+.curriculumVitae .cont__curriculumVitae {
+  margin: auto;
+}
 .curriculumVitae .curriculumVitae__img {
-  font-size: 40px;
-  border-radius: 50%;
+  font-size: 1.6em;
   color: black;
-  position: relative;
-  top: 17%;
-  left: 27%;
 }
 .curriculumVitae:hover {
   border-radius: 50%;
@@ -458,6 +465,7 @@ body {
 @media screen and (min-width: 200px) and (max-width: 450px) {
   .cont__txt-Works .cont__txt-Works-title {
     font-size: 1.5em;
+    margin-top: 4em;
   }
 }
 .cont__txt-Works .cont__txt-Works-txt {
@@ -481,7 +489,6 @@ body {
 @media screen and (min-width: 200px) and (max-width: 450px) {
   .container__works {
     width: 95%;
-    margin-top: 5em;
   }
 }
 .container__works .works {

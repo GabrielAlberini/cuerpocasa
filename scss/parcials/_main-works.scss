@@ -12,6 +12,7 @@
         font-family: $tipografiaTitles;
         @media screen and (min-width: 200px) and (max-width:450px) {
           font-size: 1.5em;
+          margin-top: 4em;
       }
       }
       .cont__txt-Works-txt {
@@ -33,7 +34,6 @@
     padding: 8% 0;
     @media screen and (min-width: 200px) and (max-width:450px) {
         width: 95%;
-        margin-top: 5em;
     }
     .works {
         display: grid;
