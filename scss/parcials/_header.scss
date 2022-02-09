@@ -45,7 +45,6 @@ header {
               margin: 0;
               padding: 0;
               border-radius: 12px;
-              margin-top: .2rem;
           }
         }
         .menu__nav-li {
@@ -54,7 +53,7 @@ header {
           transition: all ease-in-out 250ms;
           @media screen and (min-width: 200px) and (max-width:450px) {
           .menu__nav-li {
-              width: auto;
+              width: 100%;
               padding: 0;
               transition: all ease-in-out 250ms;
               margin-left: 0;
@@ -85,14 +84,10 @@ header {
       }
 
       .hide {
-        padding: 16px;
         font-size: 18px;
-        float: right;
-        color: white;
-        cursor: pointer;
         font-family: $tipografiaTxt;
         display: none;
-        letter-spacing: 1px;
+        color: white;
         text-transform: lowercase;
         text-shadow: $txtShadow;
         &:hover {

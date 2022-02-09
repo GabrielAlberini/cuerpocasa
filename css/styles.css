@@ -99,7 +99,6 @@ header .contLogonav .menu__list {
     margin: 0;
     padding: 0;
     border-radius: 12px;
-    margin-top: 0.2rem;
   }
 }
 header .contLogonav .menu__nav-li {
@@ -109,7 +108,7 @@ header .contLogonav .menu__nav-li {
 }
 @media screen and (min-width: 200px) and (max-width: 450px) {
   header .contLogonav .menu__nav-li .menu__nav-li {
-    width: auto;
+    width: 100%;
     padding: 0;
     transition: all ease-in-out 250ms;
     margin-left: 0;
@@ -137,14 +136,10 @@ header .contLogonav .menu__nav-link--active {
   text-shadow: 1px 1px 9px #8584c7;
 }
 header .hide {
-  padding: 16px;
   font-size: 18px;
-  float: right;
-  color: white;
-  cursor: pointer;
   font-family: "Karla", sans-serif;
   display: none;
-  letter-spacing: 1px;
+  color: white;
   text-transform: lowercase;
   text-shadow: 1px 1px 9px #8584c7;
 }
